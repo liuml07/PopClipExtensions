@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>Extension Description</key>
+    <string>JIRA Extension by Mingliang Liu</string>
+    <key>Extension Identifier</key>
+    <string>org.apache.liuml07.popclip.extension.JIRA</string>
+    <key>Extension Name</key>
+    <string>JIRA</string>
+    <key>Version</key>
+    <integer>1</integer>
+    <key>Actions</key>
+    <array>
+      <dict>
+        <key>URL</key>
+        <string>http://issues.apache.org/jira/browse/{popclip text}</string>
+        <key>Image File</key>
+        <string>jira.png</string>
+        <key>Title</key>
+        <string>JIRA</string>
+        <key>Regular Expression</key>
+        <string>(?i)\b(HADOOP|HDFS|SPARK|MAPREDUCE|HIVE|HBASE|PIG|YARN|AMBARI)-[0-9]+\b</string>
+      </dict>
+    </array>
+  </dict>
+</plist>
