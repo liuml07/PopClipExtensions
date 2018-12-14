@@ -20,7 +20,7 @@
         <key>Title</key>
         <string>JIRA</string>
         <key>Regular Expression</key>
-        <string>(?i)\b(HADOOP|HDFS|SPARK|MAPREDUCE|HIVE|HBASE|PIG|YARN|AMBARI)-[0-9]+\b</string>
+        <string>(?i)\b(HADOOP|HDFS|SPARK|MAPREDUCE|HIVE|HBASE|PIG|YARN|AMBARI|PHOENIX)-[0-9]+\b</string>
       </dict>
     </array>
   </dict>
