@@ -1,7 +1,27 @@
-## Fast Open JIRA Links via PopClip
+# PopClip Extensions
 
-Jira is a proprietary issue tracking product, developed by Atlassian. You can always select the JIRA number and click the JIRA icon to fast open the JIRA link.
+This repo contains several useful PopClip extensions.
 
-![Screen Shot](screenshot.png)
+Some can be installed directly by installing the whole folder. The other can be simply copy and install as they are [snippets](https://forum.popclip.app/t/introducing-extension-snippets/309). 
+Select that text below, and you’ll see an “Install Extension” action in PopClip. Just install it!
 
-Add more `dict` items in `Config.plist` to handle your own JIRA domains.
+###  Fast Open JIRA Links via PopClip
+
+See the `jira/` directory.
+
+### Copy `bat` output to clipboard
+
+It removes the leading line number and | format when you copying a `bat` output. With this you will never miss `cat`!
+
+
+```
+// # popclip
+// name: CopyBat
+// icon: BAT
+// description: Remove `bat` formatter from the selected text.
+// language: javascript
+pasteboard.text = popclip.input.text
+  .split('\n')
+  .map(line => line.replace(/.*│/g, ''))
+  .join('\n');
+```
