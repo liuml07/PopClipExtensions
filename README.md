@@ -1,4 +1,4 @@
-# Fast Open JIRA Links via PopClip
+## Fast Open JIRA Links via PopClip
 
 Jira is a proprietary issue tracking product, developed by Atlassian. You can always select the JIRA number and click the JIRA icon to fast open the JIRA link.
 
