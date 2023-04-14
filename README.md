@@ -17,9 +17,10 @@ It removes the leading line number and | format when you copying a `bat` output.
 ```
 // # popclip
 // name: CopyBat
-// icon: BAT
+// icon: circle filled BAT
 // description: Remove `bat` formatter from the selected text.
 // language: javascript
+// required apps: [com.googlecode.iterm2]
 pasteboard.text = popclip.input.text
   .split('\n')
   .map(line => line.replace(/.*│/g, ''))
