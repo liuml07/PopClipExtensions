@@ -25,6 +25,6 @@ To get the app ID, use `osascript -e 'id of app "iTerm"'`
 // required apps: [com.googlecode.iterm2]
 pasteboard.text = popclip.input.text
   .split('\n')
-  .map(line => line.replace(/.*│/g, ''))
+  .map(line => line.replace(/.*│ ?/g, ''))
   .join('\n');
 ```
